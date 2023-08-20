@@ -1,11 +1,48 @@
-<h1>Chatea YA</h1>
+<main>
+  <div class="containerChat">
+    <div class="headerChat">
+      <h1><i
+          class="fas fa-comment-dots fa-flip-horizontal"
+          style="color: #ffffff;"
+        ></i>
+        Chatea Ya</h1>
+    </div>
+    <div class="userChat">
+      <div class="userList">
+        <h3><i class="fas fa-users" style="color: #ffffff;"></i> Usuarios</h3>
+        <ul>
+          <li><i class="fas fa-user" style="color: #ffffff;"></i>Bullrich</li>
+          <li><i class="fas fa-user" style="color: #ffffff;"></i>Macri</li>
+          <li><i class="fas fa-user" style="color: #ffffff;"></i>Milei</li>
+          <li><i class="fas fa-user" style="color: #ffffff;"></i>Larreta</li>
+        </ul>
+      </div>
+      <div class="chatList">
+        <p id="messageLogs"></p>
+      </div>
+    </div>
+    <div class="inputContainer">
+      <div class="inputLeft"></div>
+      <div class="inputRight">
+        <input id="chatBox" />
+        <button type="submit" id="submitButton">Enviar</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+{{! <h1>Chatea YA</h1>
 <div>
   <input id="chatBox" />
 </div>
 <div>
   <p id="messageLogs"></p>
-</div>
+</div> }}
 
+<script
+  src="https://kit.fontawesome.com/fc72539189.js"
+  crossorigin="anonymous"
+></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/index.js"></script>

@@ -34,4 +34,5 @@ io.on('connection', socket => {
     socket.on('authenticated', data => {
         socket.broadcast.emit('newUserConnected', data)
     })
+
 })
