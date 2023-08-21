@@ -18,7 +18,7 @@ Swal.fire({
 })
 
 chatBox.addEventListener('keyup', event => {
-    if (event.key === "Enter" || onclick(submitButton)) {
+    if (event.key === "Enter") {
         if (chatBox.value.trim().length > 0) {
             socket.emit("message", { user: user, message: chatBox.value })
             chatBox.value = ""
